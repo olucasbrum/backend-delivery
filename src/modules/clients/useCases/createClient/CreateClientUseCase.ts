@@ -14,6 +14,8 @@ export class CreateClientUseCase {
         username: {
           // ignore uppercase and lowercase
           mode: 'insensitive',
+          // allow register new user
+          equals: username,
         },
       },
     });

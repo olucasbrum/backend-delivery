@@ -13,6 +13,8 @@ export class CreateDeliverymanUseCase {
         username: {
           // ignore uppercase and lowercase
           mode: 'insensitive',
+          // allow register new user
+          equals: username,
         },
       },
     });
